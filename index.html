@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS buổi 4</title>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+      <!-- BT1  -->
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Quản lý tuyển sinh
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group d-flex justify-content-around">
+            <input class="form-control w-25 fs-3" type="number" placeholder="Nhập điểm chuẩn" id="diemChuan">
+            <select name="" id="khuVuc" class="form-control w-25 fs-3">
+                <option>Chọn khu vực</option>
+                <option>X</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <select id="doiTuong" class="form-control w-25 fs-3 ">
+              <option>Chọn đối tượng</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+            </div>
+            <div class="form-group d-flex justify-content-around mt-4">
+              <input class="form-control w-25 fs-3" type="number" placeholder="Điểm môn thứ nhất" id="diem1">
+              <input class="form-control w-25 fs-3" type="number" placeholder="Điểm môn thứ hai" id="diem2">
+              <input class="form-control w-25 fs-3" type="number" placeholder="Điểm môn thứ ba" id="diem3">
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary fw-bold fs-4 ms-4" id="btnKQ">
+              Kết quả
+            </button>
+            <div class="mt-2 fs-3s" id="ketQua"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <!-- BT2 -->
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center fw-bold fs-2">
+            Tính tiền điện
+          </div>
+          <div class="card-body fs-5">
+            <div class="form-group d-flex">
+            <input class="form-control w-25 fs-3 me-5" placeholder="Nhập họ tên" id="name">
+            <input class="form-control w-25 fs-3" type="number" placeholder="Nhập số KW" id="soKW">
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary fw-bold fs-4" id="btnTinh">
+              Tính
+            </button>
+            <div class="mt-2 fs-3s" id="total"></div>
+          </div>
+        </div>
+      </div>
+    <script src="./main.js"></script>
+</body>
+</html>
